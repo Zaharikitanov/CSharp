@@ -1,3 +1,6 @@
+<a href="README.md">Back to Appendix</a>
+
+## Character Escape Sequences and Verbatim Strings
 Here's the most important items to remember about formatting literal strings:
 
 - Use character escape sequences when you need to insert a special character into a literal string, like a tab \t, new line \n, or a double quotation mark \".
