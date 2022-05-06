@@ -14,6 +14,6 @@ String interpolation combines multiple values into a single literal string by us
 ```string message = $"{greeting} {firstName}!";```
 
 ### Combine verbatim literals and string interpolation
-```string projectName = "First-Project";
-Console.WriteLine($@"C:\Output\{projectName}\Data");```
+```string projectName = "First-Project";```
+```Console.WriteLine($@"C:\Output\{projectName}\Data");```
 
