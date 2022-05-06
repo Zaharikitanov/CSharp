@@ -17,3 +17,5 @@ String interpolation combines multiple values into a single literal string by us
 ```string projectName = "First-Project";``` <br>
 ```Console.WriteLine($@"C:\Output\{projectName}\Data");```
 
+Result: C:\Output\First-Project\Data
+
