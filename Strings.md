@@ -10,10 +10,10 @@ Here's the most important items to remember about formatting literal strings:
 - Unicode characters may not print out correctly depending on the application.
 
 ## String Interpolation
-String interpolation combines multiple values into a single literal string by using a "template" and one or more interpolation expressions. An interpolation expression is a variable surrounded by an opening and closing curly brace symbol ```{ }```. The literal string becomes a template when it's prefixed by the ```$``` character.
+String interpolation combines multiple values into a single literal string by using a "template" and one or more interpolation expressions. An interpolation expression is a variable surrounded by an opening and closing curly brace symbol ```{ }```. The literal string becomes a template when it's prefixed by the ```$``` character. <br>
 ```string message = $"{greeting} {firstName}!";```
 
 ### Combine verbatim literals and string interpolation
-```string projectName = "First-Project";```
+```string projectName = "First-Project";``` <br>
 ```Console.WriteLine($@"C:\Output\{projectName}\Data");```
 
