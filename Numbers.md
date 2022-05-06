@@ -6,15 +6,17 @@
 - ```*``` is the multiplication operator
 - ```/``` is the division operator
 
-```int sum = 7 + 5;```<br>
-```int difference = 7 - 5;```<br>
-```int product = 7 * 5;```<br>
-```int quotient = 7 / 5;```<br>
+```
+int sum = 7 + 5;
+int difference = 7 - 5;
+int product = 7 * 5;
+int quotient = 7 / 5;
 
-```Console.WriteLine("Sum: " + sum);```<br>
-```Console.WriteLine("Difference: " + difference);```<br>
-```Console.WriteLine("Product: " + product);```<br>
-```Console.WriteLine("Quotient: " + quotient);```<br>
+Console.WriteLine("Sum: " + sum);
+Console.WriteLine("Difference: " + difference);
+Console.WriteLine("Product: " + product);
+Console.WriteLine("Quotient: " + quotient);
+```
 
 Result: <br>
 Sum: 12 <br>
@@ -28,24 +30,30 @@ However, the resulting quotient of our division example may not be what you may 
 
 To see division working properly, we need to use a data type that supports fractional digits after the decimal point like ```decimal```.
 
-```decimal decimalQuotient = 7.0m / 5;```<br>
-```Console.WriteLine("Decimal quotient: " + decimalQuotient);```<br>
+```
+decimal decimalQuotient = 7.0m / 5;
+Console.WriteLine("Decimal quotient: " + decimalQuotient);
+```
 
 Result: Decimal quotient: 1.4
 
 In order for this to work, the quotient (left of the assignment operator) must be of type ```decimal``` <b>and</b> either the dividend or divisor must be of type ```decimal``` (or both).
 
-```decimal decimalQuotient = 7 / 5.0m;```<br>
-```decimal decimalQuotient = 7.0m / 5.0m;```<br>
+```
+decimal decimalQuotient = 7 / 5.0m;
+decimal decimalQuotient = 7.0m / 5.0m;
+```
 
 What if you are not working with literal values? In other words, what if you need to divide two variables of type ```int``` but do not want the result truncated? In that case, you must perform a data type cast from ```int``` to ```decimal```. Casting is one type of data conversion that instructs the compiler to temporarily treat a value as if it were a different data type.
 
 To cast ```int``` to ```decimal```, you add the cast operator before the value. You use the name of the data type surrounded by parenthesis in front of the value to cast it. In this case, we would add ```(decimal)``` before the variables first and second.
 
-```int first = 7;```<br>
-```int second = 5;```<br>
-```decimal quotient = (decimal)first / (decimal)second;```<br>
-```Console.WriteLine(quotient);```<br>
+```
+int first = 7;
+int second = 5;
+decimal quotient = (decimal)first / (decimal)second;
+Console.WriteLine(quotient);
+```
 
 Result: 1.4
 
@@ -53,15 +61,30 @@ Result: 1.4
 
 The remainder operator ```%``` tells you the remainder of ```int``` division. What you really learn from this is whether one number is divisible by another. 
 
-```Console.WriteLine("Modulus of 200 / 5 : " + (200 % 5));```<br>
-```Console.WriteLine("Modulus of 7 / 5 : " + (7 % 5));```<br>
+```
+Console.WriteLine("Modulus of 200 / 5 : " + (200 % 5));
+Console.WriteLine("Modulus of 7 / 5 : " + (7 % 5));
+```
 
 Result:<br>
 Modulus of 200 / 5 : 0<br>
 Modulus of 7 / 5 : 2
 
+## Order of Operations
 
+1. Parentheses (whatever is inside the parenthesis is performed first)
+2. Exponents (While there's no exponent operator in C#, you can use the ```System.Math.Pow()``` method)
+3. Multiplication and Division (from left to right)
+4. Addition and Subtraction (from left to right)
 
+```
+int value1 = 3 + 4 * 5;
+int value2 = (3 + 4) * 5;
+Console.WriteLine(value1);
+Console.WriteLine(value2);
+```
 
-
+Result:<br>
+23<br>
+35
 
