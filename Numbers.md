@@ -16,13 +16,13 @@ Console.WriteLine("Sum: " + sum);
 Console.WriteLine("Difference: " + difference);
 Console.WriteLine("Product: " + product);
 Console.WriteLine("Quotient: " + quotient);
-```
 
-Result: <br>
-Sum: 12 <br>
-Difference: 2<br>
-Product: 35<br>
-Quotient: 1<br>
+Output: 
+Sum: 12 
+Difference: 2
+Product: 35
+Quotient: 1
+```
 
 However, the resulting quotient of our division example may not be what you may have expected. The values after the decimal are truncated from ```quotient``` since it is defined as an ```int```, and ```int``` cannot contain values after the decimal.
 
@@ -33,9 +33,9 @@ To see division working properly, we need to use a data type that supports fract
 ```
 decimal decimalQuotient = 7.0m / 5;
 Console.WriteLine("Decimal quotient: " + decimalQuotient);
-```
 
-Result: Decimal quotient: 1.4
+Output: Decimal quotient: 1.4
+```
 
 In order for this to work, the quotient (left of the assignment operator) must be of type ```decimal``` <b>and</b> either the dividend or divisor must be of type ```decimal``` (or both).
 
@@ -53,9 +53,9 @@ int first = 7;
 int second = 5;
 decimal quotient = (decimal)first / (decimal)second;
 Console.WriteLine(quotient);
-```
 
-Result: 1.4
+Output: 1.4
+```
 
 ## Determine the remainder after int division
 
@@ -64,11 +64,11 @@ The remainder operator ```%``` tells you the remainder of ```int``` division. Wh
 ```
 Console.WriteLine("Modulus of 200 / 5 : " + (200 % 5));
 Console.WriteLine("Modulus of 7 / 5 : " + (7 % 5));
-```
 
-Result:<br>
-Modulus of 200 / 5 : 0<br>
+Output:
+Modulus of 200 / 5 : 0
 Modulus of 7 / 5 : 2
+```
 
 ## Order of Operations
 
@@ -82,9 +82,8 @@ int value1 = 3 + 4 * 5;
 int value2 = (3 + 4) * 5;
 Console.WriteLine(value1);
 Console.WriteLine(value2);
-```
 
-Result:<br>
-23<br>
+Output:
+23
 35
-
+```
