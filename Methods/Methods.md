@@ -34,3 +34,7 @@ Other methods are designed to accept one or more input parameters. The input par
 When calling methods, separate each input parameter with a ```,``` symbol.<br>
 Input parameters are defined using a data type.<br>
 A <b>method signature</b> is the number of input parameters defined for each input parameter and the data type.
+
+## Overloaded methods
+
+An <b>overloaded method</b> is defined with multiple method signatures. Overloaded methods provide different ways to call the method or provide different types of data.
