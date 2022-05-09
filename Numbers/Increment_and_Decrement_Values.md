@@ -36,4 +36,22 @@ Second decrement: 2
 Third decrement: 1
 ```
 
+In contrast, consider the last line of code:
+
+```
+int value = 1;
+value++;
+Console.WriteLine("First: " + value);
+Console.WriteLine("Second: " + value++);
+Console.WriteLine("Third: " + value);
+Console.WriteLine("Fourth: " + (++value));
+
+Output:
+First: 2
+Second: 2
+Third: 3
+Fourth: 4
+```
+
+Here, the order of operations is switched because the ```++``` operator is placed before the operand value.
 
