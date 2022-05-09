@@ -1,4 +1,5 @@
-<a href="README.md">Back to Appendix</a><br>
+<a href="README.md">Back to Appendix</a>
+
 <a href="Numbers.md">Back to Numbers</a>
 
 ## Addition, subtraction, multiplication, and division with integers.
