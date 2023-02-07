@@ -1,4 +1,4 @@
-<a href="README.md">Back to Appendix</a>
+<a href="../README.md">Back to Appendix</a>
 
 # Determine the current directory
 
